@@ -29,7 +29,7 @@ def average(
             field_tracker[field] += member_data[field]
 
     for field in field_tracker:
-        field_tracker[field] /= count
+        field_tracker[field] = int(field_tracker[field] / count)
 
     return field_tracker
 
